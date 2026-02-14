@@ -29,7 +29,128 @@
     color: #0d6efd !important;
 }
 
-/* Demo sections (for scroll testing only) */
+/* ============ HERO CAROUSEL ============ */
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img {
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.55);
+}
+
+/* Static overlay on top of carousel */
+.hero-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    pointer-events: none;
+    width: 100%;
+    padding: 0 15%;
+}
+
+.hero-overlay-text .btn-cta {
+    pointer-events: auto;
+}
+
+.hero-welcome {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #e8a87c;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.btn-cta {
+    background-color: #e8a87c;
+    color: #fff;
+    padding: 12px 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #d4956a;
+    color: #fff;
+}
+
+/* Carousel indicators */
+#heroCarousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+#heroCarousel .carousel-indicators button.active {
+    background-color: #e8a87c;
+}
+
+/* ============ FLOATING BUTTONS ============ */
+.floating-btns {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1050;
+}
+
+.float-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.float-btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.phone-btn {
+    background-color: #e8a87c;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+}
+
+/* ============ DEMO SECTIONS ============ */
 .section {
     height: 100vh;
     display: flex;
@@ -47,5 +168,26 @@
 
     .nav-link {
         padding: 12px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-welcome {
+        font-size: 1.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-caption {
+        padding: 0 8%;
+    }
+
+    .hero-img {
+        height: 70vh;
     }
 }
