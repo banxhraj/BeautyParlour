@@ -27,7 +27,7 @@ BeautyParlour/
 │   │   └── fonts/
 │   │
 │   ├── index.html
-│    *rest of the pages
+│   ├── ... (rest of the pages)
 │   └── sitemap.xml
 │
 ├── backend/
