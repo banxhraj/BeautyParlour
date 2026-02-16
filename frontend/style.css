@@ -440,7 +440,6 @@
   font-weight: 500;
 }
 
-
 /* ================= OPEN HOURS FOOTER SECTION ================= */
 .open-hours-section {
   background-color: #ff9999; /* Coral/Salmon color matching the image */
@@ -456,7 +455,7 @@
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: inline-block;
   padding-bottom: 10px;
   margin-bottom: 30px;
@@ -503,7 +502,6 @@
   background: #f0f0f0;
   color: #e08888;
 }
-
 
 /* ================= SERVICES SECTION ================= */
 .services-section {
@@ -742,4 +740,102 @@
   .gallery-img {
     height: 200px;
   }
+}
+
+/* ================= ABOUT US PAGE REDESIGN ================= */
+
+/* Greenish Page Header Overlay */
+.page-header-green {
+  background:
+    linear-gradient(rgba(92, 188, 182, 0.7), rgba(92, 188, 182, 0.7)),
+    url("https://placehold.co/1920x400/3a3a3a/cccccc?text=About+Us");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.why-choose-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.why-choose-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Why We Are The Best Section */
+.why-best-section {
+  padding-bottom: 80px;
+}
+
+.why-best-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+/* Progress Bar Item */
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.skill-percent {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #999;
+}
+
+.progress {
+  height: 3px;
+  background-color: #eee;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.progress-bar {
+  background-color: #5cbcb6; /* Teal default */
+  box-shadow: none;
+}
+
+/* Alternating colors for progress bars based on nth-child logic or helper classes */
+.skill-item:nth-child(odd) .progress-bar {
+  background-color: #5cbcb6; /* Teal */
+}
+
+.skill-item:nth-child(even) .progress-bar {
+  background-color: #ff9999; /* Salmon */
 }
