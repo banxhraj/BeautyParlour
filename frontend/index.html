@@ -1,225 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Company Website</title>
+  <title>Company Website</title>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main Navigation">
-  <div class="container">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main Navigation">
+    <div class="container">
 
-    <!-- Logo + Company Name -->
-    <a class="navbar-brand d-flex align-items-center" href="#home">
-      <img src="logo.png" alt="Company Logo" class="logo me-2">
-      <span class="company-name">MyCompany</span>
+      <!-- Logo + Company Name -->
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="logo.png" alt="Company Logo" class="logo me-2">
+        <span class="company-name">MyCompany</span>
+      </a>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto text-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT US</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVICES</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">PACKAGES</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">GALLERY</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">BLOG</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT US</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ========================================== -->
+
+  <!-- ================= HOME / HERO CAROUSEL ================= -->
+  <section id="home">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides (images only) -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://placehold.co/1920x800/3a3a3a/cccccc?text=Spa+Slide+1" class="d-block w-100 hero-img"
+            alt="Spa Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://placehold.co/1920x800/4a3a3a/cccccc?text=Spa+Slide+2" class="d-block w-100 hero-img"
+            alt="Spa Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://placehold.co/1920x800/3a4a3a/cccccc?text=Spa+Slide+3" class="d-block w-100 hero-img"
+            alt="Spa Slide 3">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <!-- Static overlay text (does NOT change with slides) -->
+    <div class="hero-overlay-text">
+      <p class="hero-welcome">Welcome to</p>
+      <h1 class="hero-title">SPA CENTER IN KOLKATA</h1>
+      <p class="hero-subtitle">Massage therapy center. Make an appointment in just a click!</p>
+      <a href="tel:+919999999999" class="btn btn-cta">CALL NOW</a>
+    </div>
+  </section>
+  <!-- ========================================================= -->
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-btns">
+    <a href="tel:+919999999999" class="float-btn phone-btn" aria-label="Call Us">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+      </svg>
     </a>
-
-    <!-- Hamburger Button -->
-    <button class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto text-center">
-
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">HOME</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#about">ABOUT US</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#packages">PACKAGES</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#services">SERVICES</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#gallery">GALLERY</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#blog">BLOG</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT US</a>
-        </li>
-
-      </ul>
-    </div>
+    <a href="https://wa.me/919999999999" target="_blank" class="float-btn whatsapp-btn" aria-label="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.325-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+      </svg>
+    </a>
   </div>
-</nav>
-<!-- ========================================== -->
 
-<!-- ================= HOME / HERO CAROUSEL ================= -->
-<section id="home">
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <!-- Dummy sections for testing -->
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="about-section">
 
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <!-- Slides (images only) -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://placehold.co/1920x800/3a3a3a/cccccc?text=Spa+Slide+1" class="d-block w-100 hero-img" alt="Spa Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src="https://placehold.co/1920x800/4a3a3a/cccccc?text=Spa+Slide+2" class="d-block w-100 hero-img" alt="Spa Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="https://placehold.co/1920x800/3a4a3a/cccccc?text=Spa+Slide+3" class="d-block w-100 hero-img" alt="Spa Slide 3">
+    <!-- Welcome Header -->
+    <div class="welcome-header text-center py-5">
+      <p class="welcome-subtitle">Welcome to our</p>
+      <h1 class="welcome-title">BODY MASSAGE CENTER</h1>
+      <div class="welcome-divider">
+        <span class="divider-line"></span>
+        <span class="divider-icon">&#10087;</span>
+        <span class="divider-line"></span>
       </div>
     </div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <!-- About Grid: 3 columns x 2 rows -->
+    <div class="about-grid">
 
-  </div>
+      <!-- Row 1, Col 1: Image -->
+      <div class="about-cell about-cell--img">
+        <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600" alt="Foot Spa">
+      </div>
 
-  <!-- Static overlay text (does NOT change with slides) -->
-  <div class="hero-overlay-text">
-    <p class="hero-welcome">Welcome to</p>
-    <h1 class="hero-title">SPA CENTER IN KOLKATA</h1>
-    <p class="hero-subtitle">Massage therapy center. Make an appointment in just a click!</p>
-    <a href="tel:+919999999999" class="btn btn-cta">CALL NOW</a>
-  </div>
-</section>
-<!-- ========================================================= -->
+      <!-- Row 1, Col 2: About Us -->
+      <div class="about-cell about-cell--text">
+        <h2 class="about-cell__heading">ABOUT US</h2>
+        <p class="about-cell__desc">
+          <strong>Spa Center in Kolkata</strong> is a name always on the mind of
+          our customers when they think of a soothing and satisfied
+          moment they ever had. The spa consists in high levels of
+          professionalism, reliability and hence manages even
+          small small things that make the visitors feel very
+          comfortable.
+        </p>
+        <a href="#" class="btn-custom">READ MORE</a>
+      </div>
 
-<!-- Floating Contact Buttons -->
-<div class="floating-btns">
-  <a href="tel:+919999999999" class="float-btn phone-btn" aria-label="Call Us">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-    </svg>
-  </a>
-  <a href="https://wa.me/919999999999" target="_blank" class="float-btn whatsapp-btn" aria-label="WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.325-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-    </svg>
-  </a>
-</div>
+      <!-- Row 1, Col 3: Image -->
+      <div class="about-cell about-cell--img">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600" alt="Massage Therapy">
+      </div>
 
-<!-- Dummy sections for testing -->
-<!-- ================= ABOUT SECTION ================= -->
-<section id="about" class="about-section">
+      <!-- Row 2, Col 1: Our Specialists -->
+      <div class="about-cell about-cell--text">
+        <h2 class="about-cell__heading">OUR SPECIALISTS</h2>
+        <p class="about-cell__desc">
+          You are welcome to call and book a massage with your
+          suitable time! Please feel free to call and reach out with
+          any questions. We are leading <strong>Full Body Massage center
+            in Kolkata</strong>. Male full body massage. Provide Full Body
+          Massage. Various Kinds of Massage to remove particular
+          defect. If you want book your appointment then you must
+          call for appointment.
+        </p>
+        <a href="#" class="btn-custom">READ MORE</a>
+      </div>
 
-  <!-- Welcome Header -->
-  <div class="welcome-header text-center py-5">
-    <p class="welcome-subtitle">Welcome to our</p>
-    <h1 class="welcome-title">BODY MASSAGE CENTER</h1>
-    <div class="welcome-divider">
-      <span class="divider-line"></span>
-      <span class="divider-icon">&#10087;</span>
-      <span class="divider-line"></span>
-    </div>
-  </div>
+      <!-- Row 2, Col 2: Image -->
+      <div class="about-cell about-cell--img">
+        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600" alt="Spa Salt">
+      </div>
 
-  <!-- About Grid: 3 columns x 2 rows -->
-  <div class="about-grid">
+      <!-- Row 2, Col 3: Contact Us -->
+      <div class="about-cell about-cell--text">
+        <h2 class="about-cell__heading">CONTACT US</h2>
+        <p class="about-cell__desc">
+          Each one of our staff members are licensed massage
+          therapists who have gone above and beyond in
+          training. Our <strong>Body Massage center</strong> in Kolkata blends
+          excellence, well being, peace of mind and many more..
+        </p>
+        <a href="#contact" class="btn-custom">CONTACT NOW</a>
+      </div>
 
-    <!-- Row 1, Col 1: Image -->
-    <div class="about-cell about-cell--img">
-      <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600" alt="Foot Spa">
-    </div>
-
-    <!-- Row 1, Col 2: About Us -->
-    <div class="about-cell about-cell--text">
-      <h2 class="about-cell__heading">ABOUT US</h2>
-      <p class="about-cell__desc">
-        <strong>Spa Center in Kolkata</strong> is a name always on the mind of
-        our customers when they think of a soothing and satisfied
-        moment they ever had. The spa consists in high levels of
-        professionalism, reliability and hence manages even
-        small small things that make the visitors feel very
-        comfortable.
-      </p>
-      <a href="#" class="btn-custom">READ MORE</a>
     </div>
 
-    <!-- Row 1, Col 3: Image -->
-    <div class="about-cell about-cell--img">
-      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600" alt="Massage Therapy">
+  </section>
+  <!-- ================================================== -->
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services" class="services-section">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+
+        <!-- Service 1 -->
+        <div class="col-md-4 service-item position-relative">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600" alt="Hot Tub Treatment"
+            class="img-fluid w-100 service-img">
+          <div class="service-overlay">
+            <p class="service-script">Massage for rest & relaxation</p>
+            <h3 class="service-title">CURE YOUR SKIN WITH HOT TUB TREATMENT</h3>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4 service-item position-relative">
+          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600" alt="Massage Therapy"
+            class="img-fluid w-100 service-img">
+          <div class="service-overlay">
+            <p class="service-script">Manual & exercise therapy</p>
+            <h3 class="service-title">MASSAGE THERAPY</h3>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4 service-item position-relative">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600" alt="Body Massage"
+            class="img-fluid w-100 service-img">
+          <div class="service-overlay">
+            <p class="service-script">Body Massage</p>
+            <h3 class="service-title">CURE YOUR BODY THROUGH MASSAGE</h3>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
+  <!-- ==================================================== -->
 
-    <!-- Row 2, Col 1: Our Specialists -->
-    <div class="about-cell about-cell--text">
-      <h2 class="about-cell__heading">OUR SPECIALISTS</h2>
-      <p class="about-cell__desc">
-        You are welcome to call and book a massage with your
-        suitable time! Please feel free to call and reach out with
-        any questions. We are leading <strong>Full Body Massage center
-        in Kolkata</strong>. Male full body massage. Provide Full Body
-        Massage. Various Kinds of Massage to remove particular
-        defect. If you want book your appointment then you must
-        call for appointment.
-      </p>
-      <a href="#" class="btn-custom">READ MORE</a>
+  <!-- ================= PACKAGES / PRICING SECTION ================= -->
+  <section id="packages" class="packages-section py-5">
+    <div class="container">
+
+      <!-- Section Header on top (centered) -->
+      <div class="packages-header text-center mb-5">
+        <p class="packages-subtitle">Best Deals</p>
+        <h2 class="packages-title">SPECIAL PACKAGES</h2>
+        <div class="packages-divider">
+          <span class="divider-line-red"></span>
+          <span class="divider-icon-red">&#10087;</span> <!-- floral heart dingbat -->
+          <span class="divider-line-red"></span>
+        </div>
+      </div>
+
+      <!-- Pricing List (2 columns) -->
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-lg-6">
+
+          <!-- Item 1 -->
+          <div class="pricing-item mb-4">
+            <div class="d-flex justify-content-between align-items-baseline border-bottom pb-2 mb-2">
+              <h4 class="pricing-name">DRY MASSAGE</h4>
+              <span class="pricing-cost">₹1500.00</span>
+            </div>
+            <p class="pricing-meta text-muted mb-1">60 Minute Sessions ( ₹1500.00 per session)</p>
+            <p class="pricing-desc">
+              Massage with powder, Spa Therapy with manicure, Foot & Head massage,
+              Sower bath or jacuzzi
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="pricing-item mb-4">
+            <div class="d-flex justify-content-between align-items-baseline border-bottom pb-2 mb-2">
+              <h4 class="pricing-name">DEEP TISSUE</h4>
+              <span class="pricing-cost">₹2200.00</span>
+            </div>
+            <p class="pricing-meta text-muted mb-1">60 Minute Sessions ( ₹2200.00 per session)</p>
+            <p class="pricing-desc">
+              Massage with aroma Oil, Spa Therapy with manicure, Pressure on tissue therapy,
+              Bathtub or jacuzzi
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-6">
+
+          <!-- Item 3 -->
+          <div class="pricing-item mb-4">
+            <div class="d-flex justify-content-between align-items-baseline border-bottom pb-2 mb-2">
+              <h4 class="pricing-name">OIL MASSAGE</h4>
+              <span class="pricing-cost">₹1800.00</span>
+            </div>
+            <p class="pricing-meta text-muted mb-1">60 Minute Sessions ( ₹1800.00 per session)</p>
+            <p class="pricing-desc">
+              Massage with aroma Oil, Spa Therapy with manicure, Foot & Head massage,
+              Sower bath or jacuzzi
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="pricing-item mb-4">
+            <div class="d-flex justify-content-between align-items-baseline border-bottom pb-2 mb-2">
+              <h4 class="pricing-name">FOUR HANDS</h4>
+              <span class="pricing-cost">₹3200.00</span>
+            </div>
+            <p class="pricing-meta text-muted mb-1">60 Minute Sessions ( ₹3200.00 per session)</p>
+            <p class="pricing-desc">
+              Massage with aroma Oil, Spa Therapy with 2 manager's, Pressure on tissue therapy, Bathtub or jacuzzi
+            </p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+  </section>
+  <!-- ============================================================== -->
+  <section id="gallery" class="section">GALLERY</section>
+  <section id="blog" class="section">BLOG</section>
+  <section id="contact" class="section">CONTACT</section>
 
-    <!-- Row 2, Col 2: Image -->
-    <div class="about-cell about-cell--img">
-      <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600" alt="Spa Salt">
-    </div>
-
-    <!-- Row 2, Col 3: Contact Us -->
-    <div class="about-cell about-cell--text">
-      <h2 class="about-cell__heading">CONTACT US</h2>
-      <p class="about-cell__desc">
-        Each one of our staff members are licensed massage
-        therapists who have gone above and beyond in
-        training. Our <strong>Body Massage center</strong> in Kolkata blends
-        excellence, well being, peace of mind and many more..
-      </p>
-      <a href="#contact" class="btn-custom">CONTACT NOW</a>
-    </div>
-
-  </div>
-
-</section>
-<!-- ================================================== -->
-<section id="packages" class="section">PACKAGES</section>
-<section id="services" class="section">SERVICES</section>
-<section id="gallery" class="section">GALLERY</section>
-<section id="blog" class="section">BLOG</section>
-<section id="contact" class="section">CONTACT</section>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

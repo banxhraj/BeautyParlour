@@ -1,371 +1,518 @@
 /* Logo size */
 .logo {
-    height: 42px;
-    width: auto;
+  height: 42px;
+  width: auto;
 }
 
 /* Company Name Styling */
 .company-name {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 
 /* Navbar links spacing */
 .navbar-nav .nav-link {
-    padding: 10px 18px;
-    font-weight: 500;
-    transition: 0.3s;
+  padding: 10px 18px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 /* Hover effect */
 .navbar-nav .nav-link:hover {
-    color: #0d6efd !important;
+  color: #0d6efd !important;
 }
 
 /* Active link */
 .navbar-nav .nav-link.active {
-    color: #0d6efd !important;
+  color: #0d6efd !important;
 }
 
 /* ============ HERO CAROUSEL ============ */
 #home {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-img {
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(0.55);
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.55);
 }
 
 /* Static overlay on top of carousel */
 .hero-overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    text-align: center;
-    pointer-events: none;
-    width: 100%;
-    padding: 0 15%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+  width: 100%;
+  padding: 0 15%;
 }
 
 .hero-overlay-text .btn-cta {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .hero-welcome {
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    font-size: 1.6rem;
-    color: #e8a87c;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #e8a87c;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
 }
 
 .hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 4px;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
-    font-size: 1rem;
-    color: #ddd;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 
 .btn-cta {
-    background-color: #e8a87c;
-    color: #fff;
-    padding: 12px 35px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
+  background-color: #e8a87c;
+  color: #fff;
+  padding: 12px 35px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-cta:hover {
-    background-color: #d4956a;
-    color: #fff;
+  background-color: #d4956a;
+  color: #fff;
 }
 
 /* Carousel indicators */
 #heroCarousel .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
 }
 
 #heroCarousel .carousel-indicators button.active {
-    background-color: #e8a87c;
+  background-color: #e8a87c;
 }
 
 /* ============ FLOATING BUTTONS ============ */
 .floating-btns {
-    position: fixed;
-    bottom: 25px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1050;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1050;
 }
 
 .float-btn {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .float-btn:hover {
-    transform: scale(1.1);
-    color: #fff;
+  transform: scale(1.1);
+  color: #fff;
 }
 
 .phone-btn {
-    background-color: #e8a87c;
+  background-color: #e8a87c;
 }
 
 .whatsapp-btn {
-    background-color: #25d366;
+  background-color: #25d366;
 }
 
 /* ============ DEMO SECTIONS ============ */
 .section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-weight: bold;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* ================= ABOUT SECTION ================= */
 
 /* Section wrapper */
 .about-section {
-    background: #f5f5f5;
-    padding: 0 0 60px 0;
+  background: #f5f5f5;
+  padding: 0 0 60px 0;
 }
 
 /* Welcome Header */
 .welcome-header {
-    background: #fff;
+  background: #fff;
 }
 
 .welcome-subtitle {
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    font-size: 24px;
-    color: #5cbcb6;
-    margin-bottom: 0;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #5cbcb6;
+  margin-bottom: 0;
 }
 
 .welcome-title {
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .welcome-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 .divider-line {
-    display: inline-block;
-    width: 60px;
-    height: 2px;
-    background: #5cbcb6;
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background: #5cbcb6;
 }
 
 .divider-icon {
-    color: #5cbcb6;
-    font-size: 20px;
+  color: #5cbcb6;
+  font-size: 20px;
 }
 
 /* ---- 3x2 Grid ---- */
 .about-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 /* Every cell */
 .about-cell {
-    min-height: 320px;
-    overflow: hidden;
+  min-height: 320px;
+  overflow: hidden;
 }
 
 /* Image cells */
 .about-cell--img {
-    position: relative;
+  position: relative;
 }
 
 .about-cell--img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Text cells */
 .about-cell--text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 35px 30px;
-    background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px 30px;
+  background: #fff;
 }
 
 .about-cell__heading {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #333;
-    margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .about-cell__desc {
-    font-size: 13px;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 /* Custom Button */
 .btn-custom {
-    display: inline-block;
-    padding: 10px 28px;
-    border: 2px solid #5cbcb6;
-    color: #5cbcb6;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-    align-self: flex-start;
+  display: inline-block;
+  padding: 10px 28px;
+  border: 2px solid #5cbcb6;
+  color: #5cbcb6;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+  align-self: flex-start;
 }
 
 .btn-custom:hover {
-    background: #5cbcb6;
-    color: #fff;
+  background: #5cbcb6;
+  color: #fff;
 }
 
 /* ---- Responsive ---- */
 
 /* Tablet: 2 columns */
 @media (max-width: 991px) {
-    .welcome-title {
-        font-size: 28px;
-    }
+  .welcome-title {
+    font-size: 28px;
+  }
 
-    .about-grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 24px;
-    }
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+  }
 
-    .about-cell {
-        min-height: 260px;
-    }
+  .about-cell {
+    min-height: 260px;
+  }
 
-    .about-cell--text {
-        text-align: center;
-    }
+  .about-cell--text {
+    text-align: center;
+  }
 
-    .btn-custom {
-        align-self: center;
-    }
+  .btn-custom {
+    align-self: center;
+  }
 }
 
 /* Mobile: 1 column */
 @media (max-width: 575px) {
-    .welcome-title {
-        font-size: 22px;
-    }
+  .welcome-title {
+    font-size: 22px;
+  }
 
-    .welcome-subtitle {
-        font-size: 18px;
-    }
+  .welcome-subtitle {
+    font-size: 18px;
+  }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        padding: 0 16px;
-    }
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
 
-    .about-cell {
-        min-height: 220px;
-    }
+  .about-cell {
+    min-height: 220px;
+  }
 
-    .about-cell--text {
-        padding: 28px 20px;
-        text-align: center;
-    }
+  .about-cell--text {
+    padding: 28px 20px;
+    text-align: center;
+  }
 
-    .btn-custom {
-        align-self: center;
-    }
+  .btn-custom {
+    align-self: center;
+  }
 }
 
 /* ================================================== */
 
 /* Mobile adjustments */
 @media (max-width: 991px) {
-    .navbar-nav {
-        padding-top: 10px;
-    }
+  .navbar-nav {
+    padding-top: 10px;
+  }
 
-    .nav-link {
-        padding: 12px;
-    }
+  .nav-link {
+    padding: 12px;
+  }
 
-    .hero-title {
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-    }
+  .hero-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
 
-    .hero-welcome {
-        font-size: 1.2rem;
-    }
+  .hero-welcome {
+    font-size: 1.2rem;
+  }
 
-    .hero-subtitle {
-        font-size: 0.9rem;
-    }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
 
-    .hero-caption {
-        padding: 0 8%;
-    }
+  .hero-caption {
+    padding: 0 8%;
+  }
 
-    .hero-img {
-        height: 70vh;
-    }
+  .hero-img {
+    height: 70vh;
+  }
+}
+
+/* ================= SERVICES SECTION ================= */
+.services-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-img {
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.service-item:hover .service-img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+.service-item:hover .service-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.service-script {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.service-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+  padding-bottom: 5px;
+}
+
+.service-item:hover .service-title {
+  border-color: #fff;
+}
+
+/* ================= PACKAGES / PRICING SECTION ================= */
+.packages-section {
+  background-color: #fcfcfc;
+}
+
+.packages-subtitle {
+  font-family: "Brush Script MT", cursive;
+  color: #ff9999; /* Light reddish/pink */
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.packages-title {
+  font-size: 2rem;
+  color: #666;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+/* Divider for Packages */
+.packages-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.divider-line-red {
+  width: 60px;
+  height: 1px;
+  background: #ff9999;
+}
+
+.divider-icon-red {
+  color: #ff9999;
+  font-size: 18px;
+}
+
+/* Pricing Item */
+.pricing-item {
+  padding: 10px;
+}
+
+.pricing-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.pricing-cost {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff9999;
+}
+
+.pricing-meta {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.pricing-desc {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .pricing-item {
+    margin-bottom: 30px;
+  }
 }
